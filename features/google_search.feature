@@ -5,6 +5,6 @@ Feature: Search
   I want to be able to search using keywords
 
   Scenario: Search for cucumber
-    Given I am on the home page
+    Given I am on the google home page
     And I have entered "red had developers" into the "q" field
     Then I should see "developers.redhat.com"
