@@ -2,7 +2,7 @@ Given(/^I am on the solutions page$/) do
   visit('/solutions')
 end
 
-Then(/^I should see the main title$/) do
+Then(/^I should see the solutions title$/) do
   find('.blowout').text.include?("SOLUTIONS")
 end
 

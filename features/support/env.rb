@@ -11,6 +11,10 @@ Capybara.configure do |config|
 end
 
 Capybara.register_driver :poltergeist do |app|
-    Capybara::Poltergeist::Driver.new(app, {:js_errors => false})
+    Capybara::Poltergeist::Driver.new(app, {
+    :phantomjs_options => ['--debug=no', '--load-images=no', '--ignore-ssl-errors=yes', '--ssl-protocol=TLSv1'], :js_errors => false })
 end
+
+#This timeout will allow the page to wait for XHR
+Capybara.default_wait_time = 5
 World(Capybara)
