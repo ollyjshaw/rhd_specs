@@ -7,5 +7,5 @@ Feature: Smoke Test
   Scenario: All titles present
     Given I am on the solutions page
     Then I should see the main title
-
+    And I should see "5" solution types
 
