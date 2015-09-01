@@ -6,8 +6,8 @@ Capybara.javascript_driver = :poltergeist
 
 Capybara.configure do |config|
   #TODO these need to be configured externally
-  #config.app_host   = 'http://docker:32768'
-  config.app_host   = 'https://developers.redhat.com/'
+  #config.app_host   = 'https://developers.redhat.com/'
+  config.app_host   = 'http://docker:32768'
 end
 
 Capybara.register_driver :poltergeist do |app|
