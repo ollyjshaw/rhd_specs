@@ -11,6 +11,7 @@ Capybara.configure do |config|
 end
 
 Capybara.register_driver :poltergeist do |app|
+  #The ssl options below allow us to call searchisko (operating from a different host
     Capybara::Poltergeist::Driver.new(app, {
     :phantomjs_options => ['--debug=no', '--load-images=no', '--ignore-ssl-errors=yes', '--ssl-protocol=TLSv1'], :js_errors => false })
 end
