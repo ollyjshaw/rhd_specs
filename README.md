@@ -1,4 +1,4 @@
-# rhd_specs
+# Red Hat Developer specs
 ## Cucumber tests for redhat.developers
 
 Assumes you have ruby 2.x.x and bundler
